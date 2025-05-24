@@ -1,51 +1,52 @@
-// Rest Parameter In js
-// without Rest Parameter
-
-function sum(a, b, c, d, e)
+// Without Rest Parameter
+let sum_function= (a, b, c) =>
 {
-    return a+b+c+d+e
+    return a+ b+ c
 }
 
-let result= sum(10, 20, 30, 40, 50)
-console.log(`Total Sum= ${result}`)
+let total= sum_function(10, 10, 10)
+console.log("Sum= ", total)
 
 
-//Using Rest Parameter
-function multi(...num)
+// Using Rest Parameter
+let s_fun= (...inputs) =>
 {
-    multipication= 1
-    for(let i of num)
+    let sum= 0
+    for(let i of inputs)
     {
-        multipication= multipication* i
+        sum= sum+ i
     }
-    return multipication
+
+    return sum
 }
 
-let total= multi(1, 2, 3, 4, 5)
-console.log(`Multiplication = ${total}`)
+let result= s_fun(10, 20, 30)
+console.log("sum- ", result)
 
-
-
-// using Rest Parameter
-function multi(...n)
+//Without Rest Parameter
+let name_function= (p, q, r, s) =>
 {
-    let s= 0;
-    n.forEach(val =>{
-        s= s+ val
-    })
-    return s
+    console.log(p)
+    console.log(q)
+    console.log(r)
+    console.log(s)
+    return p
 }
 
-let ans= multi(1, 2, 3, 4, 5)
-console.log("addition= ", ans)
+let name= name_function("Ram", "Raj", "Ravi", "Sham")
+console.log(name)
 
 
-// Using Rest Parameter with other parameter
-
-let variable= (a, b, ...n)=>{
-    
-         return a
+// Using Rest Parameter
+let n_fun= (x, y, z, ...name_inputs) =>
+{
+        console.log(x)
+        console.log(y)
+        console.log(z)
+        console.log(name_inputs)
+        console.log(name_inputs[1])
+        console.log(name_inputs[2])
+        console.log(name_inputs.length)
 }
 
-let r= variable("Ram", "Raj", "Ravi", "Sham", "Sundar")
-console.log(r)
+n_fun("Mike", "Eleven", "Will", "lucus", "Dustin", "Max")
