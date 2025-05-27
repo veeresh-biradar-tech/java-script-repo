@@ -161,26 +161,26 @@
 
 
 // Creating Multiple Objects Using Object Constructor
-// function person(name, age, course, town)
-// {
-//        this.name= name
-//        this.age= age
-//        this.course= course
-//        this.town= town
-//        this.display= function()
-//        {
-//         console.log(`${name}, ${age}, ${course}, ${town}`)
-//         console.log(`Nmae= ${name}`)
-//        }
-// }
+function person(name, age, course, town)
+{
+       this.name= name
+       this.age= age
+       this.course= course
+       this.town= town
+       this.display= function()
+       {
+        console.log(`${name}, ${age}, ${course}, ${town}`)
+        console.log(`Nmae= ${name}`)
+       }
+}
 
-// let person1= new person("aman", 21, "BCA", "Humanbad")
-// let person2= new person("Swagat", 22, "B.COM", "Sedam")
-// let person3= new person("Raj", 23, "BBA", "Pune")
+let person1= new person("aman", 21, "BCA", "Humanbad")
+let person2= new person("Swagat", 22, "B.COM", "Sedam")
+let person3= new person("Raj", 23, "BBA", "Pune")
 
-// // console.log(person1)
-// // console.log(person2)
-// // console.log(person3)
-// person1.display()
-// person2.display()
-// person3.display()
+// console.log(person1)
+// console.log(person2)
+// console.log(person3)
+person1.display()
+person2.display()
+person3.display()
