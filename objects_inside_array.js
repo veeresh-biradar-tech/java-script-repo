@@ -46,16 +46,18 @@ let arr= [
 // arr.forEach(name_fun)
 
 //map
-let info= []
-info= arr.map(function(items)
-{
-    for(let i= 0; i<= items.length; i++)
-    {
-        if(items[i].name.length== 4)
-        {
-            return items[i].name
-        }
-    }
-})
+// let info= []
+// info= arr.map(function(items)
+// {
+//     for(let i= 0; i<= items.length; i++)
+//     {
+//         if(items[i].name.length== 4)
+//         {
+//             return items[i].name
+//         }
+//     }
+// })
 
-console.log(info)
+// console.log(info)
+
+//filter
